@@ -18,11 +18,9 @@ function App() {
     <>
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <GlobalStyle />
-        <StyledApp>
-          <div className="App">
-            <Navbar />
-            <Home themeToggle={themeToggle}/>
-          </div>
+        <StyledApp className="App">
+          <Navbar theme={theme}/>
+          <Home themeToggle={themeToggle} />
         </StyledApp>
       </ThemeProvider>
     </>

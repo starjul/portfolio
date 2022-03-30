@@ -38,7 +38,7 @@ nav {
 .navbar-links li a {
     text-decoration: none;
     color: #51ced2;
-    padding: 1rem 0rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     margin-left: 2rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -66,10 +66,7 @@ a.active {
         height: auto;
     }
     .navbar-links ul {
-        display: flex;
         flex-direction: column;
-        padding-top: 2em;
-        justify-content: center;
     }
 
     ul.collapsed {
@@ -82,7 +79,14 @@ a.active {
         padding: 0%;
         right: 0;
         top: 3.2em;
-        background: linear-gradient(0deg, rgba(169, 208, 211, 0.24) 0%, rgba(17, 18, 53, 0.105) 100%);
+    }
+
+    .light {
+        background: linear-gradient(178deg, #ffffff 0%, rgb(169 208 211) 100%);
+    }
+
+    .dark {
+        background: linear-gradient(357deg, #07474a 0%, rgb(8 8 23) 100%);
     }
 
     ul.collapsed li {
@@ -97,8 +101,16 @@ a.active {
         display: block;
         position: relative;
         margin: 0%;
-        border-bottom: 0.5px solid rgb(248, 248, 248, 0.15);
+        
     }
+
+    ul.is-expanded.light li a {
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.158);
+    }
+
+    /* ul.is-expanded.dark li a {
+        border-bottom: 0.1px solid rgba(255, 255, 255, 0.096);
+    } */
 
     .fa-bars {
         display: flex;
