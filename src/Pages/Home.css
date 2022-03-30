@@ -3,6 +3,7 @@
 }
 
 .switch-container{
-    display: flex;
-    justify-content: flex-end;
+    top: 90%;
+    position: fixed;
+    right: 1%;
 }
