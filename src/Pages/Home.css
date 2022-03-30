@@ -1,0 +1,8 @@
+.marginLR{
+    margin: 0% 1%;
+}
+
+.switch-container{
+    display: flex;
+    justify-content: flex-end;
+}
