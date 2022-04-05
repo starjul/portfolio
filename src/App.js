@@ -20,7 +20,7 @@ function App() {
         <GlobalStyle />
         <StyledApp className="App">
           <Navbar theme={theme}/>
-          <Home themeToggle={themeToggle} />
+          <Home themeToggle={themeToggle} theme={theme}/>
         </StyledApp>
       </ThemeProvider>
     </>

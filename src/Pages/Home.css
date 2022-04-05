@@ -3,7 +3,7 @@
 }
 
 .switch-container{
-    top: 90%;
+    bottom: 30px;
     position: fixed;
     right: 1%;
 }

@@ -1,0 +1,23 @@
+.JP h1 {
+    font-weight: 900;
+    font-size: 4.5em;
+    margin: 0em;
+    border: 2px solid #E4F8F2;
+    padding: 0rem 1rem;
+    color: #ffffff;
+}
+
+div.JP h1:first-child {
+    border-bottom: 0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .JP h1 {
+        font-weight: 900;
+        font-size: 3em;
+        padding: 0rem 0.7rem;
+   
+    }
+    
+}
