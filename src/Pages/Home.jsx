@@ -3,6 +3,7 @@ import "./Home.css";
 import HomeContent from "../Component/HomeContent/HomeContent";
 import About from "../Component/About/About";
 import styled from "styled-components";
+import Footer from "../Component/Footer/Footer";
 
 export const Section = styled.section`
   display: flex;
@@ -14,17 +15,23 @@ export const Section = styled.section`
 
 const Home = ({ themeToggle, theme }) => {
   return (
-    <div className="">
-      <div className="switch-container">
-        <ToggleSwitch themeToggle={themeToggle} />
-      </div>
-      <Section id="home">
-        <HomeContent />
-      </Section>
-      <section id="about">
-        <About theme={theme} />
-      </section>
-    </div>
+    <>
+      <main>
+        <div className="switch-container">
+          <ToggleSwitch themeToggle={themeToggle} />
+        </div>
+        <Section id="home">
+          <HomeContent />
+        </Section>
+        <section id="about">
+          <About theme={theme} />
+        </section>
+        <section></section>
+      </main>
+      <footer>
+        <Footer/>
+      </footer>
+    </>
   );
 };
 

@@ -171,7 +171,7 @@ const About = (theme) => {
           </p>
           <p>
             These days, My main focus is to apply my technical skills to a new
-            role as a <b>web development</b> where I can utilize my background
+            role as a <b>web developer</b> where I can utilize my background
             in economics, technology, and customer service to work more
             efficiently and able to build accessible products for a variety of
             clients.

@@ -48,6 +48,11 @@ const Logo = styled.a`
   font-size: ${(props) => textSize[props.size] || "2.5"};
   font-weight: 800;
   align-items: center;
+
+  &:hover {
+    color: #66897e;
+    font-weight: 800;
+  }
 `;
 
 // Menu
