@@ -1,5 +1,4 @@
 import React from "react";
-import jul from "../../Assets/jul.jpg";
 import "./HomeContent.css";
 import styled from "styled-components";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -157,10 +156,6 @@ const HomeContent = () => {
           </SocialLink>
         </Social>
       </SocialContainer>
-
-      {/* <div className="flex profile-img-container">
-        <img src={jul} alt="julaluk-picture" className="profile-img" />
-      </div> */}
     </HeroContainer>
   );
 };

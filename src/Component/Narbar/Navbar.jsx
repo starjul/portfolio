@@ -7,6 +7,7 @@ import { textSize } from "../../GlobalStylesSetting";
 // ###Styled Component for Navbar
 // Nav
 const Nav = styled.div`
+  opacity: 5;
   padding: 0 3rem;
   display: flex;
   justify-content: space-between;
@@ -14,7 +15,7 @@ const Nav = styled.div`
   flex-wrap: wrap;
   background: linear-gradient(
     359deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 10%,
     rgba(17, 18, 53, 0.105) 100%
   );
   backdrop-filter: blur(10px);
@@ -76,7 +77,7 @@ const Menu = styled.ul`
     }
 
     &.dark {
-      background: linear-gradient(0deg, rgb(216 235 232) 0%, #0F282E 100%);
+      background: linear-gradient(0deg, rgb(216 235 232) 0%, #0f282e 100%);
     }
   }
 `;
@@ -135,6 +136,10 @@ const Navbar = ({ theme }) => {
     console.log("ooo", isExpanded);
   };
 
+  const closeMenu = () => {
+    setIsExpanded(false);
+  };
+
   return (
     <Nav>
       <Logo href="/" size="large">
@@ -147,6 +152,7 @@ const Navbar = ({ theme }) => {
         className={`${isExpanded ? "is-expanded" : "no-expanded"} ${
           theme === "light" ? "light" : "dark"
         }`}
+        onClick={closeMenu}
       >
         <li>
           <MenuLink href="#home">Home</MenuLink>

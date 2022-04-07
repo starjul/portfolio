@@ -1,15 +1,15 @@
 import ToggleSwitch from "../Component/ToggleSwitch/ToggleSwitch";
 import "./Home.css";
 import HomeContent from "../Component/HomeContent/HomeContent";
+import About from "../Component/About/About";
 import styled from "styled-components";
 
-const HeroSection = styled.section`
+export const Section = styled.section`
   display: flex;
   margin: 0;
   width: 100%;
   justify-content: center;
-  background-color:#0F282E ;
-
+  background-color: ${(props) => props.color || "#123942"};
 `;
 
 const Home = ({ themeToggle, theme }) => {
@@ -18,10 +18,12 @@ const Home = ({ themeToggle, theme }) => {
       <div className="switch-container">
         <ToggleSwitch themeToggle={themeToggle} />
       </div>
-      <HeroSection id="home">
+      <Section id="home">
         <HomeContent />
-      </HeroSection>
-      
+      </Section>
+      <section id="about">
+        <About theme={theme} />
+      </section>
     </div>
   );
 };

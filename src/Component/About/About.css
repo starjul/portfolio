@@ -1,0 +1,38 @@
+.about-container {
+    width: 60%;
+    padding: 4em 0;
+}
+
+.about-detail {
+    width: 100%;
+    justify-content: center;
+}
+
+.about-detail h3{
+    text-align: start;
+    color: #1c929d;
+    margin: 1rem auto 0 2.5rem;
+}
+
+.about-detail p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 1rem 3rem;
+}
+
+@media only screen and (max-width:768px) {
+    .about-container {
+        width: 100%;
+        padding: 3em 0;
+    }
+
+    .about-detail h3{
+        margin: 1rem auto 0 2rem;
+    }
+    .about-detail p {
+        margin: 1rem 2.5rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+}

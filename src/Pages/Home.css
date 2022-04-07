@@ -6,4 +6,6 @@
     bottom: 30px;
     position: fixed;
     right: 1%;
+    z-index: 3000;
 }
+
