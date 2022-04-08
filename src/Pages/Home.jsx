@@ -4,6 +4,7 @@ import HomeContent from "../Component/HomeContent/HomeContent";
 import About from "../Component/About/About";
 import styled from "styled-components";
 import Footer from "../Component/Footer/Footer";
+import Project from "../Component/Project/Project";
 
 export const Section = styled.section`
   display: flex;
@@ -26,7 +27,9 @@ const Home = ({ themeToggle, theme }) => {
         <section id="about">
           <About theme={theme} />
         </section>
-        <section></section>
+        <section id="projects">
+          <Project />
+        </section>
       </main>
       <footer>
         <Footer/>

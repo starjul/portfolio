@@ -166,10 +166,10 @@ const Navbar = ({ theme }) => {
           <MenuLink href="#about">About</MenuLink>
         </li>
         <li>
-          <MenuLink href="#Projects">Projects</MenuLink>
+          <MenuLink href="#projects">Projects</MenuLink>
         </li>
         <li>
-          <MenuLink href="#Contact" id="contact">
+          <MenuLink href="#contact" id="contact">
             Contact
           </MenuLink>
         </li>
